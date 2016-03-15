@@ -1,0 +1,34 @@
+{
+  "name": "cheyennerosa_portfolio",
+  "version": "0.1.0",
+  "description": "This is Cheyenne R Thayer's portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheyennerosa/portfolio.git"
+  },
+  "keywords": [
+    "cheyenne",
+    "rosa",
+    "thayer",
+    "portfolio",
+    "webdesign"
+  ],
+  "author": "Cheyenne R Thayer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheyennerosa/portfolio/issues"
+  },
+  "homepage": "https://github.com/cheyennerosa/portfolio#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-qunit": "^1.1.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
