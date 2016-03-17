@@ -33,13 +33,40 @@
 
 <body id="page-top" class="index">
 
+<!-- menu overlay -->
+
+<!-- <div class="button">
+    <a class="btn-open" href="#"></a>
+</div> -->
+
+<div class="overlay">
+    
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+       
+</div>
+
+<!-- end menu overlay -->
+
     <header>
+        <button id="trigger-overlay" class="menu-btn btn-open" type="button">
+            <span class="menu-line top"></span>
+            <span class="menu-line middle"></span>
+            <span class="menu-line bottom"></span>
+        </>
     </header>
     
     <main>
         <section class="container-fluid">
             <h1>Welcome!</h1>
-            <h1><a>This is a link y'all</a></h1>
+            <h4><a>This is a link y'all</a></h4>
         </section>
 
     </main>
@@ -47,8 +74,6 @@
     <footer>
     </footer>
     
- 
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -67,8 +92,14 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script> -->
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <!-- sourced js -->
+    <script src="lib/js/classie.js"></script>
+
+    <!-- authored js -->
+    <script src="js/menuOverlay.js"></script>
+
 
 </body>
 
