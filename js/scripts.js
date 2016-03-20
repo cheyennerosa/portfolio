@@ -1,82 +1,37 @@
-// var body = document.body,
-// 	button = document.getElementById("trigger-overlay");
-// 	console.log("sup", button)
-
-
-// button.onclick = function(){
-// 	console.log("did you find dis?")
-
-// 	if (classie.has( button, 'btn-close')) {
-// 	    classie.add( body, 'disable-scroll');
-// 	    console.log("wut hapening?")
-// 	} else {
-// 	    classie.remove( body, 'disable-scroll');
-// 	}
-
-// };
-
-// Brett fixes of course
-
-// var body = document.body,
-// 	button = document.getElementById("trigger-overlay"),
-// 	menuOpen = false;
-
-// button.onclick=function(){
-//    if (menuOpen) {
-// 	console.log("menu was open")
-//  	classie.remove( body, 'disable-scroll');
-   	
-// 	}
-
-// 	else {
-//     console.log("menu was closed")
-//     classie.add( body, 'disable-scroll');
-   
-// 	}
-
-// 	menuOpen = !menuOpen
-// };
-
-// var body = document.body,
-// 	button = document.getElementById("trigger-overlay"),
-// 	pikachey = {menu:{open:false}};
-
-// button.onclick=function(){
-// 	if (pikachey.menu.open) {
-// 	console.log("menu was open")
-//  	classie.remove( body, 'disable-scroll');
-   	
-// 	} else {
-//     console.log("menu was closed")
-//     classie.add( body, 'disable-scroll');
-   
-// 	}
-// 	pikachey.menu.open = !pikachey.menu.open
-// };
-
 var body = document.body,
-	button = document.getElementById("trigger-overlay"),
-	pikachey = {
-	    menu:{
-	    	open:false
-	}};
+    button = document.getElementById("trigger-overlay"),
+    //later might need to move pikachey object out into the index so that it doesn't cause conflicts with the load order of other scripts. if you get pikachey is undefined errors then that is what that means
+    pikachey = {
+        menu: {
+            open: false,
+            checkFn: {}
+        },
 
-document.body.addEventListener('click', fn, true);
+    };
 
-button.onclick=function(){
+// globally accessible function so that anything can call the menu open close check
+pikachey.menu.checkFn = function() {
     if (pikachey.menu.open) {
-	console.log("menu was open")
- 	classie.remove( body, 'disable-scroll');
-   	
-	} else {
-	        	 console.log("menu was closed")
-	    classie.add( body, 'disable-scroll');
-	   
-	}
-	pikachey.menu.open = !pikachey.menu.open
-};
+        console.log("menu was open")
+        classie.remove(body, 'disable-scroll');
+
+    }
+    else {
+        console.log("menu was closed")
+        classie.add(body, 'disable-scroll');
+
+    }
+    pikachey.menu.open = !pikachey.menu.open
+}
 
 
 
-
-
+document.body.addEventListener('click', pikachey.menu.checkFn, true);
+button.onclick = function(e){
+    pikachey.menu.checkFn;
+    if(e && e.stopPropagation) {
+        e.stopPropagation();
+    } else {
+        //unhandled
+    }
+}
