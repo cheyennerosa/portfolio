@@ -1,4 +1,5 @@
 /*!
+ * Cheyenne here, this library is used for the mobile menu!
  * classie - class helper functions
  * from bonzo https://github.com/ded/bonzo
  * 

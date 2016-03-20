@@ -432,7 +432,7 @@ body.overlay {
 	display: block;
 	top: 0;
 	background-color: #000;
-	width: 2px;	
+	width: 1px;	
 }
 
 #back-to-top .angle-l {
@@ -444,7 +444,7 @@ body.overlay {
 }
 
 #back-to-top .angle-r {
-	right: 14.5px;
+	right: 15.5px;
 	height: 15px;
 	transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg); /* IE 9 */
