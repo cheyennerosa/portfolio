@@ -19,3 +19,7 @@ a:after {
     transition: none !important;
   }
 }
+
+#back-to-top {
+	display: hidden;
+}
