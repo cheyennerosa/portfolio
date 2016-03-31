@@ -247,9 +247,9 @@ footer p {
 	    -webkit-transform: rotate(45deg) translate(8px,8px); /* Chrome, Safari, Opera */
 	}
 	.menu-btn.btn-close .menu-line.bottom {
-		transform: rotate(-45deg) translate(9.5px,-9.5px);
-		-ms-transform: rotate(-45deg) translate(9.5px,-9.5px); /* IE 9 */
-	    -webkit-transform: rotate(-45deg) translate(9.5px,-9.5px); /* Chrome, Safari, Opera */
+		transform: rotate(-45deg) translate(8px,-8px);
+		-ms-transform: rotate(-45deg) translate(8px,-8px); /* IE 9 */
+	    -webkit-transform: rotate(-45deg) translate(8px,-8px); /* Chrome, Safari, Opera */
 	}
 }
 
@@ -390,17 +390,24 @@ body.overlay {
 	position: absolute;
 }
 
-.hero h1 {
-	font-size: 5em;
-	top: 30%;
-	left: 12.5%;
-	color: #fff;
-	font-weight: 100;
+@media(max-width:500px){
+	.hero h1 {
+		font-size: 3em;
+		top: 30%;
+		left: 12.5%;
+		color: #fff;
+		font-weight: 100;
+	}
 }
 
-.hero h4 {
-	top: 20%;
-	left: 40%; 
+@media(min-width:500px){
+	.hero h1 {
+		font-size: 5em;
+		top: 30%;
+		left: 12.5%;
+		color: #fff;
+		font-weight: 100;
+	}
 }
 
 #back-to-top {
