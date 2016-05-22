@@ -1,6 +1,22 @@
-// document.getElementById("myHead").innerHTML =
-// 	"<span id='headerText'>Title</span>"
-// 	+ "<span id='headerSubtext'>Subtitle</span>";
+document.getElementById("special-head").innerHTML =
+	"<meta charset='utf-8'>"
+	+ "<meta http-equiv='X-UA-Compatible' content='IE=edge'>"
+	+ "<meta name='viewport' content='width=device-width, initial-scale=1'>"
+	+ "<meta name='description' content='Cheyenne R Thayer Portfolio'>"
+	+ "<meta name='author' content='Cheyenne R Thayer'>"
+	+ "<link href='css/scratch.css' type='text/css' rel='stylesheet' media='screen'>"
+	+ "<link href='font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>"
+	+ "<link href='https://fonts.googleapis.com/css?family=Raleway:400,200,700' rel='stylesheet' type='text/css'>"
+	+ "<link href='css/print.css' type='text/css' rel='stylesheet' media='print'>"
+	+ "<link href='css/animate.css' type='text/css' rel='stylesheet' media='screen'>";
+
+document.title = 'Cheyenne Rosa Portfolio'; // New title :)
+
+
+        
+                    
+        
+
 
 // document.getElementById("myNav").innerHTML =
 // 	"<ul id='navLinks'>"
@@ -9,7 +25,7 @@
 // 	+ "<li><a href='donate.html'>Donate</a></li>"
 // 	+ "</ul>";
 
-document.getElementById("footer").innerHTML =
+document.getElementById("cool-footer").innerHTML =
 	"<p id='copyright'>Copyright &copy; " + new Date().getFullYear() + "</p>"
 	+ "<p>All rights reserved.</p>"
 	+ "<p id='credits'>Design by Cheyenne R Thayer</p>"
