@@ -364,7 +364,6 @@ ul.main-menu {
 
 .main-menu a:hover {
 	color: #ff7473;
->>>>>>> c41da1f836f084400049ae68230b11653a3f9007
 	-webkit-transition: .25s linear;
     -moz-transition: .25s linear;
     -o-transition: .25s linear;
@@ -427,7 +426,7 @@ ul.social {
 	border-radius: 50%;
 }
 
-.hero {
+.hero1 {
 	position: relative;
 	max-width: 500px;
 	margin: 0 auto;
