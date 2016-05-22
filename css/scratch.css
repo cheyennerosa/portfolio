@@ -247,9 +247,9 @@ footer p {
 	    -webkit-transform: rotate(45deg) translate(8px,8px); /* Chrome, Safari, Opera */
 	}
 	.menu-btn.btn-close .menu-line.bottom {
-		transform: rotate(-45deg) translate(9.5px,-9.5px);
-		-ms-transform: rotate(-45deg) translate(9.5px,-9.5px); /* IE 9 */
-	    -webkit-transform: rotate(-45deg) translate(9.5px,-9.5px); /* Chrome, Safari, Opera */
+		transform: rotate(-45deg) translate(8px,-8px);
+		-ms-transform: rotate(-45deg) translate(8px,-8px); /* IE 9 */
+	    -webkit-transform: rotate(-45deg) translate(8px,-8px); /* Chrome, Safari, Opera */
 	}
 }
 
@@ -321,7 +321,7 @@ body.overlay {
 	z-index: 99;
 }
 
-.overlay ul {
+ul.main-menu {
 	text-align: center;
 	margin-top: 2em;
 	padding: 0;
@@ -331,18 +331,18 @@ body.overlay {
 }
 
 @media(max-width: 500px) {
-	.overlay ul {
+	ul.main-menu {
 		font-size: 3em;	
 	}
 }
 
 @media(min-width: 500px) {
-	.overlay ul {
+	ul.main-menu {
 		font-size: 5em;		
 	}
 }
 
-.overlay li {
+.main-menu li {
 	font-weight: 700;
 	position: inherit;
 	top: 10%;
@@ -351,7 +351,7 @@ body.overlay {
 	padding: 0;
 }
 
-.overlay a {
+.main-menu a {
 	-webkit-transition: .25s linear;
     -moz-transition: .25s linear;
     -o-transition: .25s linear;
@@ -361,11 +361,60 @@ body.overlay {
 
 .overlay a:hover {
 	color: #E94E77;
+
+.main-menu a:hover {
+	color: #ff7473;
+>>>>>>> c41da1f836f084400049ae68230b11653a3f9007
 	-webkit-transition: .25s linear;
     -moz-transition: .25s linear;
     -o-transition: .25s linear;
     transition: .25s linear;
 	text-decoration: none;
+}
+
+.main-menu a.active {
+	color: #ff7473;
+}
+
+ul.social {
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+.social li {
+	font-size: 2em;
+	color: #fff;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.social li {
+	background-color: transparent;
+	border: 2px solid #ff7473;
+}
+
+.social li:hover {
+	background-color: #ff7473;
+}
+
+.social li .fa {
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
+}
+
+.social li .fa,
+.social li a .fa {
+	color: #ff7473;
+}
+
+.social li .fa:hover,
+.social li a:hover .fa {
+	color: #CFFFF2;
 }
 
 .img-responsive {
@@ -390,17 +439,24 @@ body.overlay {
 	position: absolute;
 }
 
-.hero h1 {
-	font-size: 5em;
-	top: 30%;
-	left: 12.5%;
-	color: #fff;
-	font-weight: 100;
+@media(max-width:500px){
+	.hero h1 {
+		font-size: 3em;
+		top: 30%;
+		left: 12.5%;
+		color: #fff;
+		font-weight: 100;
+	}
 }
 
-.hero h4 {
-	top: 20%;
-	left: 40%; 
+@media(min-width:500px){
+	.hero h1 {
+		font-size: 5em;
+		top: 30%;
+		left: 12.5%;
+		color: #fff;
+		font-weight: 100;
+	}
 }
 
 #back-to-top {

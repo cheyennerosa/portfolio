@@ -13,11 +13,6 @@ document.getElementById("special-head").innerHTML =
 document.title = 'Cheyenne Rosa Portfolio'; // New title :)
 
 
-        
-                    
-        
-
-
 // document.getElementById("myNav").innerHTML =
 // 	"<ul id='navLinks'>"
 // 	+ "<li><a href='index.html'>Home</a></li>"
@@ -29,4 +24,4 @@ document.getElementById("cool-footer").innerHTML =
 	"<p id='copyright'>Copyright &copy; " + new Date().getFullYear() + "</p>"
 	+ "<p>All rights reserved.</p>"
 	+ "<p id='credits'>Design by Cheyenne R Thayer</p>"
-	+ "<p id='contact'><a href='mailto:cthayer09@gmail.com'>Contact Me</a>"
+	+ "<p id='contact'><a href='mailto:cthayer09@gmail.com'>Contact Me</a>";
